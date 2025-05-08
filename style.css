@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+body {
+    padding-bottom: 80px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-color: rgb(130, 130, 130);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.home-search-bar {
+    height: 45px;
+    width: 270px;
+    padding-left: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(102, 102, 102);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    padding-top: 20px;
+    overflow-x: scroll;
+}
+
+.categories button {
+    color: black;
+    background-color: rgb(209, 181, 3);
+    border: 2px solid rgb(128, 77, 0);
+    padding: 8px 12px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Countries section */
+
+.countries button {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    padding-top: 0px;
+}
+
+.country-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.country-button img {
+    width: auto;
+    height: 120px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.country-name {
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    border-bottom: rgb(209, 181, 3) 4px solid;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.no-countries {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.countries .more-button {
+    width: 75px;
+    height: 40px;
+    color: white;
+    border: 2px solid rgb(209, 181, 3);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countries .more-button:active {
+    background-color: rgb(209, 181, 3);
+    color: black;
+}
+
+/* Navigation bar */
+
+.nav-bar {
+    background-color: rgb(40, 40, 40);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 2px solid rgb(209, 181, 3);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-button img {
+    height: 40px;
+    background-color: transparent;
+    display: block;
+}
+
+.nav-button {
+    border: none;
+    background-color: transparent;
+}
+
+.nav-button img.active {
+    transform: scale(1.5);
+    border-bottom: 2px solid gold;
+    padding-bottom: 4px;
+}
+
+/* Country page */
+
+.top-bar {
+    background-color: rgb(40, 40, 40);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.top-bar .left,
+.top-bar .right,
+.top-bar .center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.top-bar .left {
+    justify-content: flex-start;
+}
+
+.top-bar a img {
+    height: 40px;
+    background-color: transparent;
+}
+
+.top-bar a {
+    background-color: transparent;
+}
+
+.top-bar #country-flag {
+    border: 2px solid gold;
+    border-radius: 10px;
+    height: 36px;
+}
+
+.container {
+    padding-top: 60px;
+}
+
+.country-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.country-info #country-name {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border-bottom: rgb(209, 181, 3) 5px groove;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.country-info #country-capital,
+.country-info #country-population,
+.country-info #country-language,
+.country-info #country-currencies {
+    background-color: transparent;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.country-info p {
+    background-color: transparent;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(209, 181, 3);
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+/* Food section */
+
+.food-section {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; 
+    height: 520px;
+}
+
+.food-section button {
+    background-color: #d1b503;
+    font-size: 20px;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.food-section input[type="text"],
+.food-section input[type="file"] {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+.food-section button[type="submit"] {
+    background-color: #d1b503;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    width: 15%;
+}
+
+.food-section .dish {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dish img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: #d1b503 4px solid;
+    margin-top: 20px;
+}
+
+.dish p {
+    font-family: sans-serif;
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+    border-bottom: #d1b503 2px solid;
+    font-size: 16px;
+}
+
+
+.add-button {
+    color: white;
+    background-color: rgb(209, 181, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-aboutMe h1{
+    color: white;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-bottom: rgb(209, 181, 3) 5px solid;
+    display:inline-block;
+    border-radius: 7px;
+}
+
+.container-aboutMe p{
+    color:#d1b503;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.container-aboutMe .search-bar{
+    height: 45px;
+    width: 270px;
+    padding-left: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(102, 102, 102);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.select{
+    height: 45px;
+    width: 40px;
+    margin-left: 20px;
+    border: none;
+}
+
+section #arrow-down{
+    height: 20px;
+    width: 20px;
+}
