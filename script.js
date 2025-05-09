@@ -108,16 +108,9 @@ window.onload = function () {
     
             document.querySelector(".container").appendChild(foodSection);
         }
-
-        
-        
-
-        
-    
-
     }
 
-    }
+
 
 
     // ----- REGION CATEGORY BUTTONS ----- //
@@ -177,7 +170,7 @@ window.onload = function () {
             button.classList.add("country-button");
             
             // Adds the information of the country to the button
-            button.innerHTML = `s
+            button.innerHTML = `
                 <p class="country-name">${country.name}</p>
                 <img src="${country.flag}" alt="Bandeira de ${country.name}" />
             `;
@@ -228,7 +221,7 @@ window.onload = function () {
         });
 
 
-
+}
 function alertMessage() {
     alert("Não há mais países para mostrar no momento.");
 }
